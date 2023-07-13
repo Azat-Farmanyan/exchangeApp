@@ -1,0 +1,33 @@
+.home-block {
+  .home-content {
+    .amount-block {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .change-btn {
+        position: relative;
+        margin: 25px 0;
+        .line {
+          position: relative;
+          height: 1px;
+          width: 100%;
+          background: #1c1ccc;
+          background: #e7e7ee;
+        }
+        .change-btn-icon {
+          position: absolute;
+          top: -15px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:active {
+            filter: brightness(1.5);
+          }
+        }
+      }
+    }
+  }
+}
